@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Test</title>
+        <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    </head>
+    <body>
+        Hello <input id="name" type="text" name="name" />
+        <input type="button" value="Submit" onclick="getName();" />
+        <img id="image" />
+        <script>
+            function getName() {
+                var name = document.getElementById('name').value;
+                document.getElementById('image').src = '/api/home/' + name;
+                // axios.get('/api/home/' + name)
+                //     .then(res => {
+                //         document.getElementById('image').src = res.data
+                //     })
+                //     .catch(error => console.error(error));
+            } 
+        </script>
+    </body>
+</html>
