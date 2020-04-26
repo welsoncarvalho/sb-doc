@@ -28,7 +28,7 @@ public class HomeResource {
 
     @GetMapping
     public String getMessage() {
-        return "Hello Docker";
+        return "Hello Docker!";
     }
 
     @GetMapping(value = "/{name}")
